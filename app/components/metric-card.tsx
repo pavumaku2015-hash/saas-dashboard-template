@@ -7,7 +7,7 @@ interface MetricCardProps {
   value: string;
   change: string;
   isPositive: boolean;
-  Icon: React.ElementType;
+  Icon?: React.ElementType;
 }
 
 export default function MetricCard({ title, value, change, isPositive, Icon }: MetricCardProps) {
@@ -26,4 +26,3 @@ export default function MetricCard({ title, value, change, isPositive, Icon }: M
     </div>
   );
 }
-
