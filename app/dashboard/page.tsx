@@ -1,6 +1,7 @@
-import MetricCard from "@/components/metric-card";
-import SalesChart from "@/components/sales-chart";
+import MetricCard from "../components/metric-card";
+import SalesChart from "../components/sales-chart";
 import { DollarSign, Users, ShoppingCart, ArrowUpRight } from "lucide-react";
+
 
 export default function DashboardPage() {
   return (
