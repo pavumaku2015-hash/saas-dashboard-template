@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 interface MetricCardProps {
@@ -24,3 +26,4 @@ export default function MetricCard({ title, value, change, isPositive, Icon }: M
     </div>
   );
 }
+
