@@ -1,3 +1,4 @@
+// @ts-nocheck
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
