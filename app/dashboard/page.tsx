@@ -12,10 +12,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <MetricCard title="Total Revenue" value="$45,231.89" change="+20.1%" isPositive={true} Icon={DollarSign} />
-        <MetricCard title="Subscriptions" value="+2,350" change="+180.1%" isPositive={true} Icon={Users} />
-        <MetricCard title="Sales Volume" value="+12,234" change="+19%" isPositive={true} Icon={ShoppingCart} />
-        <MetricCard title="Active Now" value="+573" change="+201" isPositive={true} Icon={ArrowUpRight} />
+       <MetricCard icon={<Users className="w-5 h-5" />} title="Total Users" value="10,482" change="+12%" isPositive={true} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

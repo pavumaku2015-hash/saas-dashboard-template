@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip } from "recharts";
 
 const data = [
@@ -12,6 +13,16 @@ const data = [
 ];
 
 export default function SalesChart() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className="h-72 w-full rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-950" />;
+  }
+
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-950">
       <h3 className="font-semibold text-slate-900 dark:text-white mb-4">Revenue Overview</h3>
